@@ -1,0 +1,19 @@
+{
+  "name": "rain-game",
+  "version": "1.0.0",
+  "description": "基于vue、canvas、requestAnimationFrame的高性能红包雨效果",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "huangxiaojie",
+  "repository": "https://github.com/hxj9102/rain-game",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
