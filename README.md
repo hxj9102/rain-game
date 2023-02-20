@@ -4,7 +4,7 @@
 
 ## 效果
 
-![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8ae7b53a723c439da08b3c86b1f90bc6~tplv-k3u1fbpfcp-watermark.image)
+![](https://user-images.githubusercontent.com/58357112/220060196-fbdb615b-c3be-463b-9b77-3e742d646a9b.gif)
 
 ## 如何使用
 
