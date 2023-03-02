@@ -9,6 +9,7 @@
   "keywords": [],
   "author": "huangxiaojie",
   "repository": "https://github.com/hxj9102/rain-game",
+  "homepage": "https://hxj9102.github.io/rain-game",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.20.12",
