@@ -36,14 +36,15 @@ this.rainGame = new RainGame({
 
 ## 参数
 
-| 参数               | 说明                         | 类型                | 默认值 |
-| ------------------ | ---------------------------- | ------------------- | ------ |
-| el                 | 挂载的canvas元素             | string\|HTMLElement | -      |
-| proload            | 是否预加载rains中的image图片 | boolean             | true   |
-| interval           | 生成红包的间隔时间           | number              | 500    |
-| speed              | 红包每帧移动的距离（px）     | number              | 2      |
-| horizontalMovement | 是否支持横向移动             | boolean             | false  |
-| rains              | 红包数组信息                 | array               | -      |
+| 参数               | 说明                                                         | 类型                      | 默认值 |
+| ------------------ | ------------------------------------------------------------ | ------------------------- | ------ |
+| el                 | 挂载的canvas元素                                             | string\|HTMLCanvasElement | -      |
+| proload            | 是否预加载rains中的image图片                                 | boolean                   | true   |
+| interval           | 生成红包的间隔时间                                           | number                    | 500    |
+| speed              | 红包每帧移动的距离（px）                                     | number                    | 2      |
+| horizontalMovement | 是否支持横向移动                                             | boolean                   | false  |
+| boundary           | 点击红包边界距离，为number时表示四边的距离，为array时表示上右下左的距离 | number\|array             | -      |
+| rains              | 红包数组信息                                                 | array                     | -      |
 
 #### rains参数说明
 

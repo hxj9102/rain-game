@@ -88,14 +88,26 @@ export default class RainGame extends EventBus {
                 width,
                 height,
                 rainType,
+                boundary,
                 originData,
             } = rain
 
             if (rainType === RAIN_TYPE.CLICKED) {
                 continue
             }
+            
+            const boundaryArr = typeof boundary === 'number'
+                ? new Array(4).fill(boundary)
+                : Array.isArray(boundary)
+                    ? boundary
+                    : new Array(4).fill(0)
+            
+            const isWithinTop = offsetY >= y - (boundaryArr[0] || 0)
+            const isWithinRight = offsetX <= x + width + (boundaryArr[1] || 0)
+            const isWithinBottom = offsetY <= y + height + (boundaryArr[2] || 0)
+            const isWithinLeft = offsetX >= x - (boundaryArr[3] || 0)
 
-            const isClicked = offsetX >= x && offsetX <= x + width && offsetY >= y && offsetY <= y + height
+            const isClicked = isWithinTop && isWithinRight && isWithinBottom && isWithinLeft
 
             if (isClicked) {
                 this.$emit('strike', originData)

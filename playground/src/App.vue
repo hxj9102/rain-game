@@ -43,6 +43,7 @@ export default {
       interval: 500,
       speed: 2,
       horizontalMovement: true,
+      boundary: 4,
       rains: this.rains,
     })
     this.rainGame.$on('strike', (rain) => {
